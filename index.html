@@ -1,0 +1,56 @@
+<!--
+ This is assignment #2 to use CSS to style web pages we made in Assignment 1. 
+ (Task is to create a 3 page website using only HTML with links to navigate between pages with 2 different size headers, a list, 3 images, a table, and a form.) FYI I maintain a WordPress site for the CDA Triathlon so I have access to all their images, many of which I took myself.
+-->
+
+<!--This is the bolier plate code that every website has at the top. VS code populates this code for me by typeing ! key.
+Once this is done I move the closing tags for main, body and html to the end of my code.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDA TRI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!--This is my NAV. This section allows the user to navigate between pages in the site. It includes the page names and links of the other pages.I copied and pasted this code into the other pages. The nav bar is styles a different color that the background of the body. The logo top-left has a hover. When you are on the other pages you can select either the Home text ofr the logo to return to the home page.-->
+
+   
+<nav class="navbar">
+    <div class="navdiv">
+        <div class="logo"><a href="index.html"><img src="Images\CDA_Tri_PMS.png" width="200px""logo"></a></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        
+        </ul>
+     </div><br>
+</nav>  
+    
+
+<!--I wanted the large image on the page to fully cover the background color, so I gave it a class its own class of hero-image and put it in its own div. I wanted the paragraph text on the home page to be centered so I gave it its own class of homeP and stuck it in a div.-->
+
+
+<div class="hero-image">
+    <img src="Images\Boat-and-swimmers-header1700pxW.png" alt="Cruise Ship with Olympic Swimmers" width="2800">
+
+</div> 
+    
+<header><h1>The CDA Triathlon 2024</h1></header> 
+
+
+<!-- MAIN -->
+<main>
+    <div class="homeP"><p>The Coeur d’Alene Triathlon and Duathlon is one of the most scenic races in the Pacific Northwest. The 1.5k swim takes place in Lake Coeur d’Alene, a body of water that stretches 30 miles long<br>
+    and up to 3 miles wide. A 40k bike ride goes down Coeur d’Alene Lake Drive, a scenic route that leads to Mullan Trail Road for a challenging uphill course. Finishing with the 10k run,<br> 
+    the course takes you north along Northwest Boulevard and the Spokane River, ending with a triumphant finish line in the Coeur d’Alene City Park. Following the race, food and beverages<br> will be provided for all participants.
+    The 2024 race will take place in Coeur d'Alene City Park on Saturday, August 10, 2024 beginning at 5:00am.<br></p>
+</div>
+    
+
+</main>
+</body>
+</html>

@@ -1,0 +1,75 @@
+
+<!--This is the contact page. I used the same CSS style sheets for all pages which I am not sure was the best idea.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coeur d'Alene Triathlon, Duathlon and Scenic Sprint</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="index.html"><img src="Images\CDA_Tri_PMS.png" width= "200px""logo"></a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            
+            </ul>
+         </div><br>
+    </nav>  
+
+
+<!--This is my Contact page which give links to a registration website and Facebook page The links go to real pages.-->
+<main>
+
+<h2>Register to Race</h2>
+
+<table>
+
+    <tr>
+        <td>RaceRoster</td>
+        <td><a href="https://raceroster.com/events/2024/78835/coeur-d-alene-triathlon-2024">Register Here</a></td>
+    </tr>
+<tr>
+    <td>Follow us on</td>
+    <td><a href="https://www.facebook.com/CDAtriathlon">Facebook</a></td>
+</tr>
+</table>
+
+
+<!--This is the form I created for the site. I chose to give it a box style. After the placeholder boxes I added the <p> tag  for the "I want info" text, because even after adding the 2 <br> elements they did not create a space after the boxes above it. The other issue I had here was trying to make the radio buttons line up with the corresponding text. I added a label element to the text to try to make it line up, but it did not work. I really struggled here and spent extra time trying to line  up the radio buttons with the text.
+-->
+
+
+<h3> Questions about the race? Contact our Race Director</h3>
+<div id="boxdiv">
+
+    <form>
+        <input type="text" name="firstName" placeholder="First Name"<br>
+        <input type="text" name="lastName" placeholder="Last Name"<br>
+        <input type="text" name="email" placeholder="email"<br><br>
+
+
+        <div><p>I want info about:</p></div>
+
+        <input type="radio" name="gear" value="bike"><label>bike rules</label>
+        <input type="radio" name="gear" value="wetsuit"><label>wetsuit</label>
+        <input type="radio" name="gear" value="course"><label>course</label>
+        <input type="radio" name="gear" value="volunteering"><label>volunteering</label>
+        <input type ="submit" name ="submit"><br><br><br>
+
+    </form>
+</div>
+
+
+
+
+</main>
+</body>
+</html>
