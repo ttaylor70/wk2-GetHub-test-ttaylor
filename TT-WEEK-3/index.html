@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--I went throught the steps as described in the video "How to Install Bootstrap". However I did not use command prompt method, I used my Terminal in VS Code. I had trouble in command prompt for it to find the correct folder, it always just said teree/desktop. I could not get command prompt to find my WEEK-3 folder so I used the terminal inn VS Code. I installed the link for the stylesheet to Bootstrap. In our lesson the instructor said one of these was to go below the end of the </main>, but he used a CDN and I used NPM to install.
+    Overall I am happy with my website and it was fun to do.-->
+
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src= "node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    
+   <!--BODY section
+  In this section I am going to add a background color and a main-container color. I want the nav to be similar as the study video for videos in Week 3, but I wanted the logo on the left and the hamburger menu button on the right. This turned out different than I thought because when the page names drop down from the button they automtically stack to the left-hand side of the page. I tried to make them move to the right-hand side of the page under the button but that is contray to how things stack when the screen size gets smaller!-->      
+
+<body class="bg-info">
+
+    <div id="main-container" class="container pt-2 pb-2 bg-light">
+           
+            <nav class="navbar navbar-expand-md navebar-light bg-light">
+              <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><img src="images/logo4-08-e1603141324693.png" width="100px"></a>
+                
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      
+                      
+                      <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                      </li>
+                  </ul>
+                  </div>
+            </nav>
+                          
+<!--Main Section - In this section I am going to add a background color and a banner image. I want everything to be responsive. I started with a fun image and placed the headline in colored bar. -->       
+<main>
+
+<div class="container mb-5 fs-5 bg-light">
+<div>
+  <img 
+  src="images/teaching-your-dog-to-walk-on-a-leash.jpg"
+  class="img-fluid pb-2" 
+  alt="dogs on leash" 
+  width="2000">
+</div>
+
+<h1 class="text-center mb-5 bg-warning">Teaching Your Dog to Walk on a Leash</h1>
+
+<!--Section 2  This first paragraph is in the same size container as the UL and other paragraphs, however it has less of a margin for some reason. I would like help with this.-->
+
+<div class="container mb-5 fs-5">
+    <p>All dogs, regardless of size, age, or lifestyle, should be taught basic leash skills. You should be able to take your dog for a walk around the block or into a crowded vet office without having your legs wrapped up. Good leash skills are also important for safety, both your dog's and your own.
+    </p>
+<div id="Before" class="container text-left mb-5 fs-5">
+    <div class="row"><h3>Before You Start</h3></div>
+
+    <ol>
+        <li>Your dog needs an appropriate collar that fits him properly, as well as a suitable leash.</li>
+        <li>In the beginning you should have treats or some other reward for your dog.</li>
+        <li>Use a marker for good behavior; a clicker or an emphatic "yes!" works.</li>
+    </ol><br>
+
+    <div class="container bp 10">
+        <div class="row">
+          <div class="col-6">
+            <h3>Keep Sessions Short</h3>
+         <p>If you have a puppy or an adult who has never been leash trained, begin with short, positive sessions. For most sports, dogs are taught to walk on the handler's left side, but if you don't plan to compete and prefer to have your dog on your right, that's your choice. It is a good idea, though, to teach your dog to stay on one side so that he doesn't trip you as he runs back and forth.
+        </p>
+      </div>
+    
+         
+          <div class="col-6">
+            <h3>Prevent Pulling</h3>
+            <P>If your dog has already formed the habit of pulling on his leash, you must convince him of two things: Pulling will not hasten his arrival at his goal, and walking politely will make you happy enough to reward him. If you are training a puppy, or if your adult dog is responsive and submissive to you, try the "no forward progress" approach to pulling.</P>
+          </div>
+        </div>
+      </div>
+          
+        
+    </main>
+
+    <!--This is my footer. even though it says fix-bottom, it would not go all the way to the bottom like it does on my second page. I chose to make the bottom 2 paragraphs in 2-column text. I thought they would stack one-on-top of the other when screen got smaller but they do not. Hmmmm. -->
+
+    <footer class="footer mt-5">
+      <div class="bg-black fix-bottom">
+        <p class="text-white text-center p-3">
+          Zorse Media &copy;2024
+        </p>
+      </div>
+    </footer>
+    
+
+</body>
+</html>
